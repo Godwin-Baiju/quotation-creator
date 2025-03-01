@@ -44,10 +44,6 @@ const PDFTemplate = React.forwardRef<HTMLDivElement, {
       font-family: system-ui, -apple-system, sans-serif;
     }
 
-    body {
-      padding: 2rem;
-    }
-
     .quote-container {
       width: 100%;
       max-width: 210mm;
