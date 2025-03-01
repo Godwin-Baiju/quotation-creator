@@ -230,7 +230,7 @@ const PDFTemplate = React.forwardRef<HTMLDivElement, {
       <div ref={ref} style={{ width: '210mm', padding: '2rem' }}>
         <div className="quote-container">
           <div className="header">
-             <img src="/header-logo.png" alt="Our Own Marble House" style={{width: "100%", weight: "auto", objectFit: "contain", marginBottom: "1.5rem"}} className="header-image"/>
+             <img src="/header-logo.png" alt="Our Own Marble House" style={{width: "100%", height: "auto", objectFit: "contain", marginBottom: "1.5rem"}} className="header-image"/>
             <h1>Proforma Invoice</h1>
             <div className="date">{formattedDate}</div>
           </div>
