@@ -450,7 +450,7 @@ const ItemForm: React.FC<{
 
 ItemForm.displayName = 'ItemForm'
 
-export default function QuotationForm() {
+export default function Home() {
   const [mounted, setMounted] = useState(false)
   const [items, setItems] = useState<QuotationItem[]>([])
   const [currentItem, setCurrentItem] = useState(INITIAL_ITEM_STATE)
