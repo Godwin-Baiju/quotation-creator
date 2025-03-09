@@ -223,7 +223,7 @@ const PDFTemplate = React.forwardRef<HTMLDivElement, {
   return (
     <div style={{ display: 'none' }}>
       <style>{pdfStyles}</style>
-      <div ref={ref} style={{ width: '210mm', paddingLeft: '2rem', paddingRight: '2rem'  }}>
+      <div ref={ref} style={{ width: '210mm', padding: '2rem' }}>
         <div className="quote-container">
           <div className="header">
              <img src="/header-logo.png" alt="Our Own Marble House" style={{width: "100%", height: "auto", objectFit: "contain", marginBottom: "1.5rem"}} className="header-image"/>
@@ -453,7 +453,7 @@ export default function Home() {
 
   const formattedDate = format(new Date(), "dd/MM/yyyy")
   const pdfOptions = useMemo(() => ({
-    margin: 10,
+    margin: 0,
     filename: `quotation-${format(new Date(), "yyyy-MM-dd")}.pdf`,
     image: { type: 'jpeg', quality: 1 },
     html2canvas: { 
@@ -466,8 +466,7 @@ export default function Home() {
       format: 'a4', 
       orientation: 'portrait'
     },
-    autoPaging: 'text',  // This line is needed to ensure smooth text flow across pages but it causes text overlapping vertically.
-
+    autoPaging: 'text'
   }), [])
 
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
