@@ -465,7 +465,8 @@ export default function Home() {
       unit: 'mm', 
       format: 'a4', 
       orientation: 'portrait'
-    }
+    },
+    autoPaging: 'text'
   }), [])
 
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
