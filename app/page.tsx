@@ -453,7 +453,7 @@ export default function Home() {
 
   const formattedDate = format(new Date(), "dd/MM/yyyy")
   const pdfOptions = useMemo(() => ({
-    margin: [10, 0, 10, 0],
+    margin: 10,
     filename: `quotation-${format(new Date(), "yyyy-MM-dd")}.pdf`,
     image: { type: 'jpeg', quality: 1 },
     html2canvas: { 
